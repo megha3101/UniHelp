@@ -1,4 +1,4 @@
-package com.example.davecomia.timetable;
+package com.example.hwt3314.maps;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,59 +6,52 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+
 public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final Button bMonday = (Button) findViewById(R.id.bMonday);
-        final Button bTuesday = (Button) findViewById(R.id.bTuesday);
-        final Button bWednesday = (Button) findViewById(R.id.bWednesday);
-        final Button bThursday = (Button) findViewById(R.id.bThursday);
-        final Button bFriday = (Button) findViewById(R.id.bFriday);
+        Button north_campus = (Button)findViewById (R.id.top);
+        Button city_campus = (Button)findViewById(R.id.up);
+        Button south_campus = (Button)findViewById(R.id.all);
 
-        bMonday.setOnClickListener(new View.OnClickListener(){
+
+        north_campus.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
-                Intent monIntent = new Intent (MainActivity.this, Monday.class);
-                MainActivity.this.startActivity(monIntent);
+            public void onClick(View v) {
+
+                Intent in1 = new Intent(MainActivity.this, NORTH_CAMPUS.class);
+                startActivity(in1);
+
+            }
+        });
+        city_campus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent in2 = new Intent(MainActivity.this, CITY_CAMPUS.class);
+                startActivity(in2);
+
             }
         });
 
-        bTuesday.setOnClickListener(new View.OnClickListener(){
+        south_campus.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
-                Intent tueIntent = new Intent (MainActivity.this, Tuesday.class);
-                MainActivity.this.startActivity(tueIntent);
+            public void onClick(View v) {
+
+                Intent in3 = new Intent(MainActivity.this, SOUTH_CAMPUS.class);
+                startActivity(in3);
+
             }
         });
 
-        bWednesday.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent wedIntent = new Intent (MainActivity.this, Wednesday.class);
-                MainActivity.this.startActivity(wedIntent);
-            }
-        });
-
-        bThursday.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent thuIntent = new Intent (MainActivity.this, Thursday.class);
-                MainActivity.this.startActivity(thuIntent);
-            }
-        });
-
-        bFriday.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent FriIntent = new Intent (MainActivity.this, Friday.class);
-                MainActivity.this.startActivity(FriIntent);
-            }
-        });
 
 
     }
+
+
 }
