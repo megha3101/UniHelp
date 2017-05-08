@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.davecomia.timetable.Friday">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WG - 403"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="614dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text='"WG" : Building Name - "4" : Floor Level - "03" : Room Number'
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="631dp" />
+
+    <Button
+        android:id="@+id/bsFriday"
+        android:layout_width="162dp"
+        android:layout_height="52dp"
+        android:text="Save"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="529dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="178dp"
+        android:layout_height="18dp"
+        android:text="*how to read room numbers"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="596dp" />
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="393dp"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="309dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:text="10am - 12pm" />
+
+        <EditText
+            android:id="@+id/etCN26"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Class name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etRN26"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Room No"
+            android:inputType="textPersonName" />
+
+    </android.support.v7.widget.GridLayout>
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="393dp"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="271dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:text="8am - 10am" />
+
+        <EditText
+            android:id="@+id/etCN25"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Class name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etRN25"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Room No"
+            android:inputType="textPersonName" />
+
+    </android.support.v7.widget.GridLayout>
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="393dp"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="349dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:text="12pm - 2pm" />
+
+        <EditText
+            android:id="@+id/etCN27"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Class name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etRN27"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Room No"
+            android:inputType="textPersonName" />
+
+    </android.support.v7.widget.GridLayout>
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="393dp"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="429dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:text="4pm - 6 pm" />
+
+        <EditText
+            android:id="@+id/etCN29"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Class name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etRN29"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Room No"
+            android:inputType="textPersonName" />
+
+    </android.support.v7.widget.GridLayout>
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="393dp"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="389dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:text="2pm - 4pm" />
+
+        <EditText
+            android:id="@+id/etCN28"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Class name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etRN28"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Room No"
+            android:inputType="textPersonName" />
+
+    </android.support.v7.widget.GridLayout>
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="393dp"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="469dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:text="6pm - 8 pm" />
+
+        <EditText
+            android:id="@+id/etCN30"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Class name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etRN30"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Room No"
+            android:inputType="textPersonName" />
+
+    </android.support.v7.widget.GridLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="305dp"
+        android:layout_height="225dp"
+        app:srcCompat="@drawable/friday"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+</android.support.constraint.ConstraintLayout>

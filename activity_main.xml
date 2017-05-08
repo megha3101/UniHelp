@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.davecomia.timetable.MainActivity"
+    tools:layout_editor_absoluteY="16dp"
+    tools:layout_editor_absoluteX="16dp">
+
+    <Button
+        android:id="@+id/bWednesday"
+        android:layout_width="210dp"
+        android:layout_height="49dp"
+        android:text="Wednesday"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bThursday"
+        app:layout_constraintTop_toBottomOf="@+id/bTuesday" />
+
+    <Button
+        android:id="@+id/bFriday"
+        android:layout_width="210dp"
+        android:layout_height="49dp"
+        android:text="Friday"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bThursday" />
+
+    <Button
+        android:id="@+id/bThursday"
+        android:layout_width="210dp"
+        android:layout_height="49dp"
+        android:text="Thursday"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bFriday"
+        app:layout_constraintTop_toBottomOf="@+id/bWednesday" />
+
+    <Button
+        android:id="@+id/bTuesday"
+        android:layout_width="210dp"
+        android:layout_height="49dp"
+        android:text="Tuesday"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bWednesday"
+        app:layout_constraintTop_toBottomOf="@+id/bMonday" />
+
+    <Button
+        android:id="@+id/bMonday"
+        android:layout_width="210dp"
+        android:layout_height="49dp"
+        android:text="Monday"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bTuesday"
+        app:layout_constraintTop_toBottomOf="@+id/dPicker" />
+
+    <DatePicker
+        android:id="@+id/dPicker"
+        android:layout_width="348dp"
+        android:layout_height="98dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bMonday"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

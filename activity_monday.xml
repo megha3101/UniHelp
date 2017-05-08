@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.davecomia.timetable.Monday"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="305dp"
+        android:layout_height="225dp"
+        app:srcCompat="@drawable/monday"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="178dp"
+        android:layout_height="18dp"
+        android:text="*how to read room numbers"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/bsMonday"
+        app:layout_constraintHorizontal_bias="0.497" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WG - 403"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text='"WG" : Building Name - "4" : Floor Level - "03" : Room Number'
+        tools:layout_editor_absoluteY="632dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/bsMonday"
+        android:layout_width="162dp"
+        android:layout_height="52dp"
+        android:text="Save"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:layout_constraintHorizontal_bias="0.502" />
+
+    <TableLayout
+        android:layout_width="387dp"
+        android:layout_height="240dp"
+        android:id="@+id/tableLayout"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.GridLayout
+                android:id="@+id/gridLayout"
+                android:layout_width="393dp"
+                android:layout_height="40dp"
+                tools:layout_editor_absoluteX="-20dp"
+                tools:layout_editor_absoluteY="175dp">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="91dp"
+                    android:layout_height="wrap_content"
+                    android:text="8am - 10am" />
+
+                <EditText
+                    android:id="@+id/etCN1"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Class name"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/etRN1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Room No"
+                    android:inputType="textPersonName" />
+
+            </android.support.v7.widget.GridLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="393dp"
+                android:layout_height="40dp"
+                tools:layout_editor_absoluteX="-5dp"
+                tools:layout_editor_absoluteY="215dp">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="91dp"
+                    android:layout_height="wrap_content"
+                    android:text="10am - 12pm" />
+
+                <EditText
+                    android:id="@+id/etCN2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Class name"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/etRN2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Room No"
+                    android:inputType="textPersonName" />
+
+            </android.support.v7.widget.GridLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="393dp"
+                android:layout_height="40dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="259dp">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="91dp"
+                    android:layout_height="wrap_content"
+                    android:text="12pm - 2pm" />
+
+                <EditText
+                    android:id="@+id/etCN3"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Class name"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/etRN3"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Room No"
+                    android:inputType="textPersonName" />
+
+            </android.support.v7.widget.GridLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="393dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_editor_absoluteY="299dp">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="91dp"
+                    android:layout_height="wrap_content"
+                    android:text="2pm - 4pm" />
+
+                <EditText
+                    android:id="@+id/etCN4"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Class name"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/etRN4"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Room No"
+                    android:inputType="textPersonName" />
+
+            </android.support.v7.widget.GridLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="393dp"
+                android:layout_height="40dp"
+                tools:layout_editor_absoluteX="-32dp"
+                tools:layout_editor_absoluteY="-155dp">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="91dp"
+                    android:layout_height="wrap_content"
+                    android:text="4pm - 6 pm" />
+
+                <EditText
+                    android:id="@+id/etCN5"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Class name"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/etRN5"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Room No"
+                    android:inputType="textPersonName" />
+
+            </android.support.v7.widget.GridLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.GridLayout
+                android:id="@+id/gridLayout2"
+                android:layout_width="393dp"
+                android:layout_height="40dp"
+                tools:layout_editor_absoluteX="-32dp"
+                tools:layout_editor_absoluteY="106dp">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="91dp"
+                    android:layout_height="wrap_content"
+                    android:text="6pm - 8 pm" />
+
+                <EditText
+                    android:id="@+id/etCN6"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Class name"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/etRN6"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Room No"
+                    android:inputType="textPersonName" />
+
+            </android.support.v7.widget.GridLayout>
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
