@@ -1,5 +1,5 @@
 "# UniHelp" 
-# ReadMe file for Uni-Helper app
+# ReadMe file for Uni-Helper app (Rating System stuff)
 
 Developed by: Alex, Dave, Nathan, Megha and Raj
 
@@ -7,4 +7,4 @@ Current features: Able to login and get to dashboard screen. From there the user
 
 Known Bugs:
 
-Other comments:
+Other comments: Need to link the buttons to the rating update code
