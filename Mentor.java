@@ -6,19 +6,21 @@ package com.example.alexg.uni_helper_aoo;
 
 public class Mentor {
 
-    private string name;
+    private String name;
     private int mentor_rating = 0;
     private int num_of_ratings = 0;
     private int absolute_ratings = 0;   // This is the total number of stars received. This will
                                         // be used for calculation later
 
-    public Mentor(string name){
+    public Mentor(String name){
         setName(name);
+        setAbsolute_ratings(0);
+        setMentor_rating(0);
     }
 
     // Getter and setter methods below
-    public void setName(string name){
-        this.name = name;
+    public void setName(String name){
+            this.name = name;
     }
 
     public int getAbsolute_ratings(){
@@ -41,7 +43,7 @@ public class Mentor {
     public void setMentor_rating(int rating){
 
         int m_rating = getCurrentMentor_rating();
-        int abs_rating = getAboslute_ratings();
+        int abs_rating = getAbsolute_ratings() + rating;
 
         // update the number of ratings made
         setNum_of_ratings();

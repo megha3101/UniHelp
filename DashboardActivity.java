@@ -32,7 +32,7 @@ public class DashboardActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DummyActivity.class);  // Update the activity name
         startActivity(intent);
     }
-
+/*
     // Starts the Profile Activity from the button pressed by the user
     public void goToProfileActivity(View view){
         Intent intent = new Intent(this, ProfileActivity.class);  // Update the activity name
@@ -68,4 +68,5 @@ public class DashboardActivity extends AppCompatActivity {
         Intent intent = new Intent(this, UserSettingsActivity.class);   // Update the activity name
         startActivity(intent);
     }
+    */
 }

@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="215dp"
         android:layout_marginRight="16dp"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginEnd="16dp" />
@@ -33,10 +33,10 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Mentor Name: Greg"
+        android:text="Mentor Name: "
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="88dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginStart="16dp" />
 
@@ -47,21 +47,29 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Your Star rating:"
-        tools:layout_editor_absoluteY="82dp"
-        android:layout_marginLeft="128dp"
+        android:layout_marginLeft="-511dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginStart="128dp" />
+        android:layout_marginStart="128dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/ratingBar3"
+        android:layout_marginTop="21dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/editText3"
         android:layout_width="357dp"
         android:layout_height="91dp"
-        android:layout_marginLeft="16dp"
+        android:layout_marginLeft="11dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Comments"
         app:layout_constraintLeft_toLeftOf="parent"
-        tools:layout_editor_absoluteY="265dp"
-        android:layout_marginRight="8dp" />
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="15dp" />
 
 </android.support.constraint.ConstraintLayout>

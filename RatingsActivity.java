@@ -8,8 +8,16 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.RatingBar;
+import android.widget.RatingBar.OnRatingBarChangeListener;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class RatingsActivity extends AppCompatActivity {
+
+    MentorList mentorList = new MentorList();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,10 +80,52 @@ public class RatingsActivity extends AppCompatActivity {
 
     public static class RatingsAddActivity extends AppCompatActivity {
 
+        private RatingBar ratingBar;
+        private Button btnSubmit;
+        private int rating_value = 0;
+
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_ratings_add);
+
+            addListenerOnRatingBar();
+            addListenerOnButton();
+        }
+
+        public void addListenerOnRatingBar() {
+
+            ratingBar = (RatingBar) findViewById(R.id.ratingBar);
+
+            ratingBar.setOnRatingBarChangeListener(new OnRatingBarChangeListener() {
+                public void onRatingChanged(RatingBar ratingBar, float rating,
+                                            boolean fromUser) {
+
+                    //rating_value.setText(String.valueOf(rating));
+
+                }
+            });
+        }
+
+        public void addListenerOnButton() {
+
+            ratingBar = (RatingBar) findViewById(R.id.ratingBar);
+            btnSubmit = (Button) findViewById(R.id.button7);
+
+            //if click on me, then display the current rating value.
+            btnSubmit.setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View v) {
+
+                    Toast.makeText(RatingsAddActivity.this,
+                            String.valueOf(ratingBar.getRating()),
+                            Toast.LENGTH_SHORT).show();
+
+                }
+
+            });
+
         }
     }
 }
